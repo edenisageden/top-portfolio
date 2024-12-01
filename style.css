@@ -2,16 +2,23 @@
 
 }
 
+img {
+    max-width: 300px;
+}
+
 body {
-    
+    box-sizing: content-box;
+    padding: 0 200px;
 }
 
 header {
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
-
+    display: flex;
+    gap: 10px;
 }
 
 main {
@@ -19,15 +26,17 @@ main {
 }
 
 .banner {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .banner .left {
-
+    flex: 1;
 }
 
 .banner img {
-
+    flex-shrink: 0;
 }
 
 .info {
@@ -35,11 +44,19 @@ main {
 }
 
 .cards {
-
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card {
 
+}
+
+.card .image {
+    background-image: url(images/logo.svg);
+    height: 90px;
+    width: 90px;
 }
 
 .quote {
@@ -47,7 +64,8 @@ main {
 }
 
 .call-to-action {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .call-to-action .left {
@@ -55,5 +73,6 @@ main {
 }
 
 footer {
-
+    display: flex;
+    justify-content: center;
 }
