@@ -1,78 +1,208 @@
+:root {
+    --navy: #1F2937;
+    --blue: #3882F6;
+    --grey: #E5E7EB;
+    --white: #eeeeee;
+}
+
 * {
-
-}
-
-img {
-    max-width: 300px;
-}
-
-body {
-    box-sizing: content-box;
-    padding: 0 200px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--navy);
+    padding: 0 100px;
+    height: 100px;
+    align-items: center;
+}
+
+header img {
+    height: 30px;
+}
+
+header > a {
+    display: flex;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-main {
-
+nav a {
+    color: var(--white);
+    font-size: 25px;
 }
+
+main {}
 
 .banner {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
+    padding: 100px;
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 .banner .left {
     flex: 1;
+    max-width: 600px;
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+    font-size: 45px;;
+}
+
+.banner p {
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .banner img {
     flex-shrink: 0;
+    width: 600px;
+}
+
+.banner button {
+    background-color: var(--blue);
+    padding: 8px 16px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 25px;
 }
 
 .info {
+    text-align: center;
+    padding: 100px 0;
+}
 
+.info h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.info p {
+    font-size: 25px;
 }
 
 .cards {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .card {
-
+    width: 150px;
 }
 
-.card .image {
-    background-image: url(images/logo.svg);
-    height: 90px;
-    width: 90px;
+.fraud {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/fraud.jpg);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.laundering {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/laundering.jpg);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.investing {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/goldman.jpg);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.manipulation {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/manipulation.jpg);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.quote-wrapper {
+    background-color: var(--grey);
 }
 
 .quote {
+    padding: 100px 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
+.quote > p {
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+}
+
+.quote > h3 {
+    text-align: end;
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
 }
 
 .call-to-action {
     display: flex;
     justify-content: space-between;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 40px 80px;
+    border: solid var(--blue) 10px;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
-.call-to-action .left {
+.call-to-action > button {
+    background-color: transparent;
+    padding: 8px 16px;
+    border: var(--white) solid 2px;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 25px;
+}
 
+.call-to-action h3 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.call-to-action p {
+    font-size: 25px;
 }
 
 footer {
+    padding: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--navy);
 }
